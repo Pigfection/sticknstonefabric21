@@ -2,6 +2,8 @@ package net.pigfection.sticknstone;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.pigfection.sticknstone.item.ModItemGroups;
+import net.pigfection.sticknstone.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +13,7 @@ public class StickNStone implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModitems();
 	}
 }
